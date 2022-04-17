@@ -15,7 +15,7 @@ export const Title = styled.Text`
   font-family: 'Sora_700Bold';
   font-size: 16px;
 
-  margin-top: 10px;
+  margin-top: 20px;
   padding-bottom: 10px;
 `
 

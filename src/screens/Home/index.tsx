@@ -1,5 +1,6 @@
 import { Image } from "react-native";
 import { CarStateControlSection, NoticesSection } from "../../components/screens/home";
+import { NavigationMenu } from "../../components/shared/navigation";
 
 import * as S from "./home.styles";
 
@@ -18,6 +19,7 @@ export function HomeScreen() {
       </S.Header>
       <CarStateControlSection />
       <NoticesSection />
+      <NavigationMenu />
     </S.Container>
   );
 }
