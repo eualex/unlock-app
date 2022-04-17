@@ -1,7 +1,7 @@
 import styled from "styled-components/native";
 
 const COLORS = {
-  gray50: '#e2e2e2',
+  gray50: '#c3c3c3',
   gray800: '#282E3F'
 }
 
@@ -44,6 +44,7 @@ export const StateTitle = styled.Text`
   color: ${COLORS.gray800};
   font-family: 'Sora_800ExtraBold';
   font-size: 25px;
+  text-transform: uppercase;
 
   margin-top: 10px;
 `

@@ -1,5 +1,5 @@
 import { ReactText } from "react";
-import { TouchableOpacity, ViewStyle } from "react-native";
+import { GestureResponderEvent, TouchableOpacity, ViewStyle } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 
 import Icon from 'react-native-vector-icons/Feather';
@@ -12,6 +12,7 @@ type ButtonProps = {
   theme: "danger" | "primary";
   style?: ViewStyle;
   icon?: string
+  onPress?: ((event: GestureResponderEvent) => void) | undefined
 };
 
 export function Button(props: ButtonProps) {
@@ -19,7 +20,7 @@ export function Button(props: ButtonProps) {
     props.theme === "danger" ? ["#F53D5E", "#F53D5E"] : ["#60B0FF", "#0582FF"];
 
   return (
-    <TouchableOpacity>
+    <TouchableOpacity onPress={props?.onPress}>
       <LinearGradient
         colors={colors}
         style={{
