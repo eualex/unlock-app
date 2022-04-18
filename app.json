@@ -1,12 +1,16 @@
 {
   "expo": {
-    "name": "unlock-app",
-    "slug": "unlock-app",
+    "name": "Unlock",
+    "slug": "Unlock",
     "version": "1.0.0",
     "orientation": "portrait",
+    "platforms": [
+      "android",
+      "ios"
+    ],
     "icon": "./src/assets/icon.png",
     "splash": {
-      "image": "./src/assets/splash-bg.png",
+      "image": "./src/assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#fcfcfc"
     },
@@ -17,16 +21,15 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": false,
+      "bundleIdentifier": "com.unlock.unlock"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./src/assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
-      }
-    },
-    "web": {
-      "favicon": "./src/assets/favicon.png"
+        "foregroundImage": "./src/assets/icon.png",
+        "backgroundColor": "#0280ff"
+      },
+      "package": "com.unlock.unlock"
     }
   }
 }
